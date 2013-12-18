@@ -1,0 +1,49 @@
+#world{
+	width: 650px;
+	margin: 300px auto;
+}
+#tower1, #tower2, #tower3{
+	background: url("images/tower.png") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0);
+    border-radius: 6px 6px 0 0;
+    height: 145px;
+    width: 10px;
+	padding: 0 50px;
+}
+#tower1{
+	float:left;
+}
+#tower2{
+	float:left;
+	margin-left: 160px;
+}
+#tower3{
+	float:right;
+}
+
+.disk{
+	
+	position: relative;
+}
+#disk1{
+	margin-left: -111px;
+	/* margin-bottom: -10px; */
+	z-index: 1;
+}
+#disk2{
+	margin-left: -97px;
+	margin-bottom: -50px;
+	z-index: 2;
+}
+#disk3{
+	margin-left: -88px;
+	margin-bottom: -37px;
+	z-index: 3;
+}
+#disk4{
+	margin-left: -80px;
+	margin-bottom: -30px;
+	z-index: 4;
+}
+.droptower{
+	background:url("images/tower-hover.png") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0) !important;
+}
