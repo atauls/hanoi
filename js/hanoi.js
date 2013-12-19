@@ -47,10 +47,15 @@ $(document).ready(function(){
 
 function moveDisk(disk, tower) {
 	var marginBottoms = new Array(-130,-100,-90,-80);
-	var totalDiskInTower = $('#'+tower).children().length;			
+	var totalDiskInTower = $('#'+tower).children().length;
     $(disk).css('top', '0px');
 	$(disk).css('left', '0px');
 	$(disk).css('margin-bottom', '0px');
 	$('#'+tower).prepend(disk);
 	$(disk).animate({marginBottom: marginBottoms[totalDiskInTower]});
+	var diskInTower1 = $('#tower1').children().length;
+	var diskInTower2 = $('#tower2').children().length;
+	if(diskInTower1+diskInTower2==0){
+		setTimeout('alert("Hurray! You win!!")',1000);
+	}
 }
